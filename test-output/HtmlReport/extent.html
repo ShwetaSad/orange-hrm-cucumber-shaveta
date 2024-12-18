@@ -1,0 +1,1622 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">OrangeHrm Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 18, 2024 06:33:52 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 18, 2024 06:33:52 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 18, 2024 06:36:05 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='57%'><b>8</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='42%'><b>6</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='90%'><b>90</b> steps passed</small></div>
+<div>
+<small data-tooltip='6%'><b>6</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login":71.199,"User Test Features":61.384
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@sanity</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>8</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>57.143%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Shaveta</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>OrangeHrm</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 8,
+failChild: 6,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 90,
+failGrandChild: 6,
+warningGrandChild: 0,
+skipGrandChild: 3,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login</p>
+            <p class="text-sm">
+              <span>18:33:52</span> / <span>00:01:11:199</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login</h5>
+<span class='badge badge-success'>12.18.2024 18:33:52</span>
+<span class='badge badge-danger'>12.18.2024 18:35:04</span>
+<span class='badge badge-default'>00:01:11:199</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user
+I want check login functionality</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User should log in successfully with valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUsernameAndPasswordForLogIn(java.lang.String,java.lang.String)">
+                <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.LoginTestSteps.iShouldLoginSuccessfullyAndVerifyTheText(java.lang.String)">
+                <span>Then I should login successfully and verify the text "Dashboard"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>User should see the OrangeHRM logo on the Homepage</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUsernameAndPasswordForLogIn(java.lang.String,java.lang.String)">
+                <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.LoginTestSteps.iShouldSeeTheOrangeHRMLogo()">
+                <span>Then I should see the OrangeHRM logo</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>User should logout successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUsernameAndPasswordForLogIn(java.lang.String,java.lang.String)">
+                <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.LoginTestSteps.iClickOnUserProfileLogo()">
+                <span>And I click on user profile logo</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.LoginTestSteps.iMouseHoverAndClickOnLogout()">
+                <span>And I mouse hover and click on Logout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.orangehrmlive.demo.steps.LoginTestSteps.iShouldNavigateToLoginPageAndVerifyText(java.lang.String)">
+                <span>Then I should navigate to login page and verify "Login" text</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h5[normalize-space()='Login']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8bf16f26e759f72613281320805253f, findElement {using=xpath, value=//h5[normalize-space()='Login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\sadhw\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62197/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8bf16f26e759f72613281320805253f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at com.orangehrmlive.demo.utilities.Utility.getTextFromElement(Utility.java:62)
+	at com.orangehrmlive.demo.pages.HomePage.getLoginText(HomePage.java:86)
+	at com.orangehrmlive.demo.steps.LoginTestSteps.iShouldNavigateToLoginPageAndVerifyText(LoginTestSteps.java:42)
+	at ✽.I should navigate to login page and verify "Login" text(file:///C:/Users/sadhw/IdeaProjects/orange-hrm-cucumber-shaveta/src/test/resources/features/logintest.feature:24)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.orangehrmlive.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User should logout successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>: User should get error message with invalid credentials</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>: User should get error message with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When I enter the username "" and password "" for log in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on the Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then I should get error message "Required" depends on "" and ""</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [] but found [Required]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.orangehrmlive.demo.steps.LoginTestSteps.iShouldGetErrorMessageDependsOnAnd(LoginTestSteps.java:57)
+	at ✽.I should get error message "Required" depends on "" and ""(file:///C:/Users/sadhw/IdeaProjects/orange-hrm-cucumber-shaveta/src/test/resources/features/logintest.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.orangehrmlive.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>: User should get error message with invalid credentials
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="26"><span class="badge log fail-bg mr-2">Fail</span>: User should get error message with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When I enter the username "test123@gmail.com" and password "" for log in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on the Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then I should get error message "Required" depends on "test123@gmail.com" and ""</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-text oxd-text--p oxd-alert-content-text']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2830a8c70a456b7ef55a4bb5094ce11, findElement {using=xpath, value=//p[@class='oxd-text oxd-text--p oxd-alert-content-text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\sadhw\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62242/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2830a8c70a456b7ef55a4bb5094ce11
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at com.orangehrmlive.demo.utilities.Utility.getTextFromElement(Utility.java:62)
+	at com.orangehrmlive.demo.pages.LoginPage.getErrorMessageOfInvalidCredentials(LoginPage.java:57)
+	at com.orangehrmlive.demo.steps.LoginTestSteps.iShouldGetErrorMessageDependsOnAnd(LoginTestSteps.java:59)
+	at ✽.I should get error message "Required" depends on "test123@gmail.com" and ""(file:///C:/Users/sadhw/IdeaProjects/orange-hrm-cucumber-shaveta/src/test/resources/features/logintest.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.orangehrmlive.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>: User should get error message with invalid credentials
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded3.png' src="../screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="32"><span class="badge log fail-bg mr-2">Fail</span>: User should get error message with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When I enter the username "" and password "test123" for log in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on the Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then I should get error message "Required" depends on "" and "test123"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [test123] but found [Required]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.orangehrmlive.demo.steps.LoginTestSteps.iShouldGetErrorMessageDependsOnAnd(LoginTestSteps.java:57)
+	at ✽.I should get error message "Required" depends on "" and "test123"(file:///C:/Users/sadhw/IdeaProjects/orange-hrm-cucumber-shaveta/src/test/resources/features/logintest.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.orangehrmlive.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>: User should get error message with invalid credentials
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded4.png' src="../screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="38"><span class="badge log fail-bg mr-2">Fail</span>: User should get error message with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When I enter the username "test123@gmail.com" and password "test123" for log in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on the Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then I should get error message "Invalid credentials" depends on "test123@gmail.com" and "test123"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [test123] but found [Invalid credentials]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.orangehrmlive.demo.steps.LoginTestSteps.iShouldGetErrorMessageDependsOnAnd(LoginTestSteps.java:59)
+	at ✽.I should get error message "Invalid credentials" depends on "test123@gmail.com" and "test123"(file:///C:/Users/sadhw/IdeaProjects/orange-hrm-cucumber-shaveta/src/test/resources/features/logintest.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.orangehrmlive.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>: User should get error message with invalid credentials
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded5.png' src="../screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Test Features</p>
+            <p class="text-sm">
+              <span>18:35:04</span> / <span>00:01:01:384</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">User Test Features</h5>
+<span class='badge badge-success'>12.18.2024 18:35:04</span>
+<span class='badge badge-danger'>12.18.2024 18:36:05</span>
+<span class='badge badge-default'>00:01:01:384</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user
+I want to verify admin can execute different actions on users.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Admin should add user successfully</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUsernameAndPasswordForLogIn(java.lang.String,java.lang.String)">
+                <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnAdminTab()">
+                <span>And I click on Admin tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iShouldSeeTheSystemUsersText()">
+                <span>And I should see the System Users text</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnAddButton()">
+                <span>And I click on Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iShouldSeeTheAddUserText()">
+                <span>And I should see the Add User text</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iSelectUserRoleAs(java.lang.String)">
+                <span>And I select User Role as "Admin"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterEmployeeName(java.lang.String)">
+                <span>And I enter Employee Name "Ananya Dash"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUserName(java.lang.String)">
+                <span>And I enter User Name "shaveta"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iSelectStatusFromDropdownAs(java.lang.String)">
+                <span>And I select Status from dropdown as "Disable"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterPasswordInCreateUser(java.lang.String)">
+                <span>And I enter Password "Sethi123" in create user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterConfirmPasswordInCreateUser(java.lang.String)">
+                <span>And I enter Confirm Password "Sethi123" in create User</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnSaveButton()">
+                <span>And I click on Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iShouldSeeTheMessageSuccessfullySaved()">
+                <span>Then I should see the message Successfully Saved</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>User created successfully and verify it</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUsernameAndPasswordForLogIn(java.lang.String,java.lang.String)">
+                <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnAdminTab()">
+                <span>And I click on Admin tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iShouldSeeTheSystemUsersText()">
+                <span>And I should see the System Users text</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUserNameInSystemUsersPage(java.lang.String)">
+                <span>And I enter user name "Shaveta" in system users page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iSelectUserRoleAsInSystemUsersPage(java.lang.String)">
+                <span>And I select user role as "Admin" in system users page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iSelectStatusAsInSystemUsersPage(java.lang.String)">
+                <span>And I select status as "Disable" in system users page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnSearchButton()">
+                <span>And I click on search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iShouldVerifyTheUserNameInResultList(java.lang.String)">
+                <span>Then I should verify the user name "Shaveta" in result list</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log fail-bg mr-2">Fail</span>Admin should delete the user successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUsernameAndPasswordForLogIn(java.lang.String,java.lang.String)">
+                <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnAdminTab()">
+                <span>And I click on Admin tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iShouldSeeTheSystemUsersText()">
+                <span>And I should see the System Users text</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iEnterUserNameInSystemUsersPage(java.lang.String)">
+                <span>And I enter user name "Shaveta" in system users page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iSelectUserRoleAsInSystemUsersPage(java.lang.String)">
+                <span>And I select user role as "Admin" in system users page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iSelectStatusAsInSystemUsersPage(java.lang.String)">
+                <span>And I select status as "Disable" in system users page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnSearchButton()">
+                <span>And I click on search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iShouldVerifyTheUserNameInResultList(java.lang.String)">
+                <span>And I should verify the user name "Shaveta" in result list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnCheckBoxAgainstTheUserName()">
+                <span>And I click on check box against the user name</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="oxd-table-card-cell-checkbox"]//i[@class="oxd-icon bi-check oxd-checkbox-input-icon"]"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e54e3f874600dc94b96bebf1a3f14e33, findElement {using=xpath, value=//div[@class="oxd-table-card-cell-checkbox"]//i[@class="oxd-icon bi-check oxd-checkbox-input-icon"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\sadhw\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62348/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e54e3f874600dc94b96bebf1a3f14e33
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.orangehrmlive.demo.utilities.Utility.clickOnElement(Utility.java:51)
+	at com.orangehrmlive.demo.pages.ViewSystemUsersPage.clickOnCheckbox(ViewSystemUsersPage.java:130)
+	at com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnCheckBoxAgainstTheUserName(UsersTestSteps.java:117)
+	at ✽.I click on check box against the user name(file:///C:/Users/sadhw/IdeaProjects/orange-hrm-cucumber-shaveta/src/test/resources/features/usertest.feature:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnDeleteButtonAgainstTheUserName()">
+                <span>And I click on delete button against the user name</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iClickOnOkButtonOnPopup()">
+                <span>And I click on ok button on popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.orangehrmlive.demo.steps.UsersTestSteps.iShouldGetSuccessfullyDeletedMessage(java.lang.String)">
+                <span>Then I should get successfully deleted message "Successfully Deleted"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.orangehrmlive.demo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Admin should delete the user successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded6.png' src="../screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="87"><span class="badge log pass-bg mr-2">Pass</span>User should search and verify the message record found</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>User should search and verify the message record found</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on Admin tab</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should see the System Users text</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter user name "Admin" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select user role as "Admin" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select status as "Enable" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I see the one record found "(1) Record Found" message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should verify the user name "Admin" in result list</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I click on reset button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>User should search and verify the message record found</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on Admin tab</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should see the System Users text</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter user name "Orange Test" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select user role as "ESS" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select status as "Enable" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I see the one record found "(1) Record Found" message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should verify the user name "Orange Test" in result list</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I click on reset button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>User should search and verify the message record found</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on Admin tab</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should see the System Users text</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter user name "iivanov643" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select user role as "ESS" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select status as "Enable" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I see the one record found "(1) Record Found" message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should verify the user name "iivanov643" in result list</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I click on reset button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>User should search and verify the message record found</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When I enter username "Admin" and password "admin123" for log in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on Admin tab</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should see the System Users text</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter user name "Enakin" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select user role as "ESS" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select status as "Enable" in system users page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I see the one record found "(1) Record Found" message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should verify the user name "Enakin" in result list</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I click on reset button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:33:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>User should see the OrangeHRM logo on the Homepage</a>
+<div class="">
+<span class="badge badge-default">Login.User should see the OrangeHRM logo on the Homepage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>User should logout successfully</a>
+<div class="">
+<span class="badge badge-default">Login.User should logout successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='61'>User created successfully and verify it</a>
+<div class="">
+<span class="badge badge-default">User Test Features.User created successfully and verify it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:35:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='72'>Admin should delete the user successfully</a>
+<div class="">
+<span class="badge badge-default">User Test Features.Admin should delete the user successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:33:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User should log in successfully with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.User should log in successfully with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='45'>Admin should add user successfully</a>
+<div class="">
+<span class="badge badge-default">User Test Features.Admin should add user successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:33:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User should log in successfully with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.User should log in successfully with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:33:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>User should see the OrangeHRM logo on the Homepage</a>
+<div class="">
+<span class="badge badge-default">Login.User should see the OrangeHRM logo on the Homepage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>User should logout successfully</a>
+<div class="">
+<span class="badge badge-default">Login.User should logout successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>: User should get error message with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.: User should get error message with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>: User should get error message with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.: User should get error message with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>: User should get error message with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.: User should get error message with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>: User should get error message with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.: User should get error message with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='45'>Admin should add user successfully</a>
+<div class="">
+<span class="badge badge-default">User Test Features.Admin should add user successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='61'>User created successfully and verify it</a>
+<div class="">
+<span class="badge badge-default">User Test Features.User created successfully and verify it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:35:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='72'>Admin should delete the user successfully</a>
+<div class="">
+<span class="badge badge-default">User Test Features.Admin should delete the user successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='88'>User should search and verify the message record found</a>
+<div class="">
+<span class="badge badge-default">User Test Features.User should search and verify the message record found</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='101'>User should search and verify the message record found</a>
+<div class="">
+<span class="badge badge-default">User Test Features.User should search and verify the message record found</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='114'>User should search and verify the message record found</a>
+<div class="">
+<span class="badge badge-default">User Test Features.User should search and verify the message record found</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='127'>User should search and verify the message record found</a>
+<div class="">
+<span class="badge badge-default">User Test Features.User should search and verify the message record found</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Then I should get error message "Required" depends on "" and ""</a>
+<div class="">
+<span class="badge badge-default">Login.: User should get error message with invalid credentials.Then I should get error message "Required" depends on "" and ""</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Then I should get error message "Required" depends on "" and "test123"</a>
+<div class="">
+<span class="badge badge-default">Login.: User should get error message with invalid credentials.Then I should get error message "Required" depends on "" and "test123"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:35:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>Then I should get error message "Invalid credentials" depends on "test123@gmail.com" and "test123"</a>
+<div class="">
+<span class="badge badge-default">Login.: User should get error message with invalid credentials.Then I should get error message "Invalid credentials" depends on "test123@gmail.com" and "test123"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Then I should navigate to login page and verify "Login" text</a>
+<div class="">
+<span class="badge badge-default">Login.User should logout successfully.Then I should navigate to login page and verify "Login" text</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Then I should get error message "Required" depends on "test123@gmail.com" and ""</a>
+<div class="">
+<span class="badge badge-default">Login.: User should get error message with invalid credentials.Then I should get error message "Required" depends on "test123@gmail.com" and ""</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:35:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='82'>And I click on check box against the user name</a>
+<div class="">
+<span class="badge badge-default">User Test Features.Admin should delete the user successfully.And I click on check box against the user name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
